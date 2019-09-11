@@ -1,8 +1,21 @@
-
+{% extends 'base.html' %}
 <!-- TODO: Extend 'base.html' and put content into a block 'body' to match -->
+{% block body %}
 
 <!-- TODO: Make an HTML form containing a search box and a submit button to add the search term to the query string -->
+<form>
+    <input type="text" id="query" name="query">
+    <input type="submit" value="Submit">
+</form>
 
 <!-- TODO: Make a for loop to loop over GIFs passed in from the server -->
+    {% if gifs is defined %}
+    <!-- TODO: For each gif, include the 'gif.html' template to display it -->
+    <ul>
+        {% for gif in gifs %}
+            {% include 'gif.html' %}
+        {% endfor %}
+    </ul>
+    {% endif %}
 
-<!-- TODO: For each gif, include the 'gif.html' template to display it -->
+{% endblock %}
