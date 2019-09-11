@@ -15,8 +15,8 @@ def index():
     # TODO: Make 'params' dict with query term and API key
     params = {
         "q": query,
-        "Key": "566RIQJP8K3Q",
-        "lmt" : 10
+        "key": "566RIQJP8K3Q",
+        "limit" : 10
     }
 
     # TODO: Make an API call to Tenor using the 'requests' library
