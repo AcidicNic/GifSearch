@@ -26,12 +26,16 @@
     border-style: solid;
     border-color: #fff;
     border-width: 1px;
-    background-color: transparent;
+    /*background-color: transparent;*/
+    background-color: #2dcfa1;
     color: #fff;
-    padding: 5px;
+    padding: 7px;
     border-radius: 4px;
+    width: 30%;
     font-size: 20px;
     text-align: center;
+    margin-bottom: 30px;
+    margin-top: 20px;
 }
 
 #submit {
@@ -40,7 +44,7 @@
     border-color: #fff;
     border-width: 1px;
     color: #fff;
-    padding: 5px;
+    padding: 7px;
     border-radius: 4px;
     font-size: 20px;
     cursor: pointer;
@@ -48,6 +52,5 @@
 }
 
 body {
-    /*background-color: #2dcfa1;*/
-    background-image: url("rb.png");
+    background-image: url("rb.jpg");
 }
